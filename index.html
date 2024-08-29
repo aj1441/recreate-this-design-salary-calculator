@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <div class="main-container">
+        <header>
+            <h1>Income tax calculator USA</h1>
+            <h2>Find out how much your salary is after tax</h2>
+        </header>
+        <form action="" class="calculator" method="push" id="form">
+            <div class="income-wrapper form-sections">
+                <label for="income" class="cal-input">Enter your fross income</label>
+                <div class="income-input-wrapper">
+                    <img src="images/input__salary-icon.png" alt="purple dollar bill icon" class="income-icon" />
+                    <input type="number" id="income" name="income" value="55000" />
+                </div>
+            </div>
+            <div class="frequency-wrapper form-sections">
+                <label for="frequency" class="cal-input">Per</label>
+                <select id="frequency" name="frequency" value="frequency">
+                    <option value="year" selected>Annual</option>
+                    <option value="month">Month</option>
+                    <option value="biweekly">Biweekly</option>
+                    <option value="week">Weekly</option>
+                    <option value="day">Day</option>
+                    <option value="hour">Hour</option>
+                </select>
+            </div>
+            <div class="state-wrapper form-sections">
+                <label for="state" class="cal-input">Where do you work?</label>
+                <select id="state" name="state" value="state">
+                    <option value="Arizona">Arizona</option>
+                    <option value="Georgia">Georgia</option>
+                    <option value="Idaho">Idaho</option>
+                    <option value="Maryland">Maryland</option>
+                    <option value="New Mexico">New Mexico</option>
+                    <option value="North Carolina">North Carolina</option>
+                </select>
+            </div>
+            <div class="button-wrapper">
+                <input type="submit" value="Calculate" id="submit" />
+            </div>
+        </form>
+        <img class="logo" src="https://cdn-static.talent.com/img/tax-calculator/icon__main-header.png"
+            alt="a purple and orange graphic logo image made of squares and cicles" />
+    </div>
+    <div class="summary-container">
+        <h3>Summary</h3>
+        <p>
+            If you make $ <span id="salary">&nbsp</span> a year living in the region
+            of <span id="region">&nbsp</span>, USA, you will be taxed $
+            <span id="totalTax">&nbsp</span>. That means that your net pay will be $
+            <span id="annualNetPay">&nbsp</span> per year, or $
+            <span id="monthlyNetPay">&nbsp</span> per month. Your average tax rate
+            is <span id="avgTaxRate">&nbsp</span> and your marginal tax rate is
+            <span id="margTaxRate">&nbsp</span>. This marginal tax rate means that
+            your immediate additional income will be taxed at this rate. For
+            instance, an increase of <span>$100 </span>in your salary will be taxed $
+            <span id="dollarOfMarginalTax">&nbsp</span>, hence, your net pay will
+            only increase by $ <span id="marginalIncrease">&nbsp</span>.
+        </p>
+        <h3>Bonus</h3>
+        <p>
+            Example A <span id="dollarBonus1">$1,000</span> bonus will generate an
+            extra <span id="bonusTakeHome">$640</span> of net incomes. A
+            <span id="dollarBonus2">$5,000</span> bonus will generate an extra
+            <span id="bonusTakeHome2">$3,200 </span>of net incomes.
+        </p>
+    </div>
+    <script type="module" src="data/data.js"></script>
+    <script type="module" src="js/custom.js"></script>
+</body>
+
+</html>
