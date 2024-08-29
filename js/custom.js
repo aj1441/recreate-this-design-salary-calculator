@@ -18,6 +18,9 @@ function getElemAndShow(strg, value) {
   document.getElementById(strg).textContent = value;
 }
 // getElemAndShow()
+function formatNumber(number, decimalPlaces) {
+    return number.toLocaleString(undefined, { minimumFractionDigits: decimalPlaces, maximumFractionDigits: decimalPlaces });
+}
 
 const taxRates = [
   { state: "North Carolina", taxRate: 0.22 },
@@ -76,8 +79,8 @@ function calculate(user) {
   userObj.margRate = (user.margTaxRate).toFixed(2);
   userObj.calcDollarMargTax = (user.margTaxRate * 100).toFixed(2);
   userObj.calcDollarMargIncrease = (100 - user.calcDollarMargTax).toFixed(2);
-  userObj.calBonusTakeHome1 = (1000 - (user.calcDollarMargTax * 1000)).toFixed(2);
-  userObj.calBonusTakeHome2 = (5000 - (user.calcDollarMargTax * 5000)).toFixed(2);
+  userObj.calBonusTakeHome1 = (1000 - user.calcDollarMargTax).toFixed(2);
+  userObj.calBonusTakeHome2 = (5000 - user.calcDollarMargTax ).toFixed(2);
 }
 
 function showSummary() {
