@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="">
 </head>
 
 <body>
@@ -14,7 +15,7 @@
             <h1>Income tax calculator USA</h1>
             <h2>Find out how much your salary is after tax</h2>
         </header>
-        <form action="" class="calculator" method="push" id="form">
+        <form action="" class="calculator" id="form">
             <div class="income-wrapper form-sections">
                 <label for="income" class="cal-input">Enter your fross income</label>
                 <div class="income-input-wrapper">
@@ -53,7 +54,7 @@
     </div>
     <div class="summary-container">
         <h3>Summary</h3>
-        <p>
+        <p id="summary">
             If you make $ <span id="salary">&nbsp</span> a year living in the region
             of <span id="region">&nbsp</span>, USA, you will be taxed $
             <span id="totalTax">&nbsp</span>. That means that your net pay will be $
@@ -73,6 +74,12 @@
             <span id="dollarBonus2">$5,000</span> bonus will generate an extra
             <span id="bonusTakeHome2">$3,200 </span>of net incomes.
         </p>
+    </div>
+    <div class="result">
+        <div class="pie-chart-container">
+            <canvas id="pie-chart" class="animate-pie=chart" width="600" height="600"></canvas>
+            <ul id="pie-chart-legend"></ul>
+        </div>
     </div>
     <script type="module" src="data/data.js"></script>
     <script type="module" src="js/custom.js"></script>

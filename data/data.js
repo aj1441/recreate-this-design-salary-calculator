@@ -1,37 +1,37 @@
-const federalTaxRate = 22.00;
+const federalTaxRate = .22;
 
 const stateIncomeTaxRates = [
-    { state: "Alabama", rate: 5.00 + federalTaxRate },
+    { state: "Alabama", rate: .5 + federalTaxRate },
     { state: "Alaska", rate: 0.00 + federalTaxRate },  // No state income tax
-    { state: "Arizona", rate: 4.54 + federalTaxRate },
-    { state: "Arkansas", rate: 5.90 + federalTaxRate },
-    { state: "California", rate: 9.30 + federalTaxRate },  // Adjusted for the applicable income range
-    { state: "Colorado", rate: 4.40 + federalTaxRate },
-    { state: "Connecticut", rate: 5.50 + federalTaxRate },  // Adjusted for the applicable income range
-    { state: "Delaware", rate: 5.55 + federalTaxRate },  // Adjusted for the applicable income range
+    { state: "Arizona", rate: .45 + federalTaxRate },
+    { state: "Arkansas", rate: .59 + federalTaxRate },
+    { state: "California", rate: .93 + federalTaxRate },  // Adjusted for the applicable income range
+    { state: "Colorado", rate: .44 + federalTaxRate },
+    { state: "Connecticut", rate: .55 + federalTaxRate },  // Adjusted for the applicable income range
+    { state: "Delaware", rate: .55 + federalTaxRate },  // Adjusted for the applicable income range
     { state: "Florida", rate: 0.00 + federalTaxRate },  // No state income tax
-    { state: "Georgia", rate: 5.75 + federalTaxRate },
-    { state: "Hawaii", rate: 8.25 + federalTaxRate },  // Adjusted for the applicable income range
-    { state: "Idaho", rate: 6.00 + federalTaxRate },  // Adjusted for the applicable income range
-    { state: "Illinois", rate: 4.95 + federalTaxRate },
-    { state: "Indiana", rate: 3.23 + federalTaxRate },
-    { state: "Iowa", rate: 6.00 + federalTaxRate },  // Adjusted for the applicable income range
-    { state: "Kansas", rate: 5.70 + federalTaxRate },
-    { state: "Kentucky", rate: 5.00 + federalTaxRate },
-    { state: "Louisiana", rate: 5.00 + federalTaxRate },  // Adjusted for the applicable income range
-    { state: "Maine", rate: 6.75 + federalTaxRate },  // Adjusted for the applicable income range
-    { state: "Maryland", rate: 4.75 + federalTaxRate },  // Adjusted for the applicable income range
-    { state: "Massachusetts", rate: 5.00 + federalTaxRate },
-    { state: "Michigan", rate: 4.25 + federalTaxRate },
-    { state: "Minnesota", rate: 7.05 + federalTaxRate },  // Adjusted for the applicable income range
-    { state: "Mississippi", rate: 5.00 + federalTaxRate },
-    { state: "Missouri", rate: 5.40 + federalTaxRate },
-    { state: "Montana", rate: 6.75 + federalTaxRate },
-    { state: "Nebraska", rate: 5.01 + federalTaxRate },  // Adjusted for the applicable income range
+    { state: "Georgia", rate: .56 + federalTaxRate },
+    { state: "Hawaii", rate: .83 + federalTaxRate },  // Adjusted for the applicable income range
+    { state: "Idaho", rate: .6 + federalTaxRate },  // Adjusted for the applicable income range
+    { state: "Illinois", rate: .5 + federalTaxRate },
+    { state: "Indiana", rate: .32 + federalTaxRate },
+    { state: "Iowa", rate: .6 + federalTaxRate },  // Adjusted for the applicable income range
+    { state: "Kansas", rate: .57 + federalTaxRate },
+    { state: "Kentucky", rate: .50 + federalTaxRate },
+    { state: "Louisiana", rate: .50 + federalTaxRate },  // Adjusted for the applicable income range
+    { state: "Maine", rate: .68 + federalTaxRate },  // Adjusted for the applicable income range
+    { state: "Maryland", rate: .48 + federalTaxRate },  // Adjusted for the applicable income range
+    { state: "Massachusetts", rate: .50 + federalTaxRate },
+    { state: "Michigan", rate: .43 + federalTaxRate },
+    { state: "Minnesota", rate: .71 + federalTaxRate },  // Adjusted for the applicable income range
+    { state: "Mississippi", rate: .5 + federalTaxRate },
+    { state: "Missouri", rate: .54 + federalTaxRate },
+    { state: "Montana", rate: .68 + federalTaxRate },
+    { state: "Nebraska", rate: .50 + federalTaxRate },  // Adjusted for the applicable income range
     { state: "Nevada", rate: 0.00 + federalTaxRate },  // No state income tax
     { state: "New Hampshire", rate: 0.00 + federalTaxRate },  // No state income tax (only on dividends and interest)
-    { state: "New Jersey", rate: 6.37 + federalTaxRate },  // Adjusted for the applicable income range
-    { state: "New Mexico", rate: 4.90 + federalTaxRate },  // Adjusted for the applic
+    { state: "New Jersey", rate: .64 + federalTaxRate },  // Adjusted for the applicable income range
+    { state: "New Mexico", rate: .50 + federalTaxRate },  // Adjusted for the applic
 ]
 
 export default stateIncomeTaxRates;
